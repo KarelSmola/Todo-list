@@ -3,7 +3,7 @@
 const addBtn = document.querySelector(".add-btn");
 const newNoticeInput = document.querySelector(".new-notice-input");
 const noticeContainer = document.querySelector(".notice-container");
-const date = document.querySelector(".date");
+// const date = document.querySelector(".date");
 const filterButtons = document.querySelector(".filter-buttons");
 
 // Listeners
@@ -26,7 +26,8 @@ const dateIntl = function () {
   return new Intl.DateTimeFormat(locale, options).format();
 };
 
-date.textContent = dateIntl();
+// Date in the title
+// date.textContent = dateIntl();
 
 addBtn.addEventListener("click", function (event) {
   event.preventDefault;
