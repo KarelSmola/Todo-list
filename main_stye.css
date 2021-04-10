@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 1rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+}
+
+.date {
+  padding: 5px;
+  font-weight: bold;
+}
+
+.input-container {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 2rem;
+}
+
+.new-notice-input {
+  flex: 3;
+  padding-left: 5px;
+  border: 1px solid black;
+}
+
+.add-btn {
+  width: 105px;
+  font-size: 1.5rem;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.filter-buttons {
+  display: flex;
+}
+
+.all-notices,
+.completed-notices,
+.uncompleted-notices {
+  flex: 1;
+  height: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.fas {
+  border: 0;
+  pointer-events: none;
+}
+
+.notice-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.notice {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+  background-color: #fff;
+  font-size: 1rem;
+}
+
+.notice-date {
+  border: 1px solid black;
+  background-color: #999;
+  margin-right: 5px;
+  padding: 0 5px;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.notice-text {
+  flex: 4;
+  border: 1px solid black;
+  padding: 5px;
+}
+
+.completed-btn,
+.trash-btn {
+  width: 50px;
+  margin-left: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.fall {
+  transform: rotateX(90deg);
+  transition-duration: 1s;
+  opacity: 0;
+}
