@@ -43,7 +43,9 @@ addBtn.addEventListener("click", function (event) {
   // Date
   const dateNotice = document.createElement("p");
   dateNotice.classList.add("notice-date");
-  dateNotice.textContent = new Intl.DateTimeFormat(locale).format(now);
+  dateNotice.textContent = toString(
+    new Intl.DateTimeFormat(locale).format(now)
+  );
   notice.append(dateNotice);
 
   // Notice Text

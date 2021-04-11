@@ -62,7 +62,13 @@ h1 {
   color: rgb(0, 80, 184);
 }
 
-.add-btn:hover {
+.add-btn:hover,
+.all-notices:hover,
+.completed-notices:hover,
+.uncompleted-notices:hover,
+.all-notices:focus,
+.completed-notices:focus,
+.uncompleted-notices:focus {
   background-color: rgb(0, 80, 184);
   color: #fff;
 }
@@ -81,6 +87,8 @@ h1 {
   font-family: "PT Sans";
   font-weight: bold;
   font-size: 1rem;
+  cursor: pointer;
+  color: rgb(0, 80, 184);
 }
 
 .completed-notices {
