@@ -34,6 +34,7 @@ main {
 h1 {
   display: flex;
   justify-content: center;
+  color: rgb(0, 80, 184);
 }
 
 .date {
@@ -123,6 +124,11 @@ h1 {
   font-size: 1rem;
 }
 
+.notice-date-mobile {
+  display: none;
+  color: red;
+}
+
 .notice-text {
   flex: 4;
   padding: 5px;
@@ -166,4 +172,24 @@ h1 {
   transform: rotateX(90deg);
   transition-duration: 1s;
   opacity: 0;
+}
+
+@media only screen and (max-width: 400px) {
+  main {
+    width: 90%;
+  }
+
+  .input-container {
+    display: flex;
+  }
+
+  .add-btn,
+  .completed-btn,
+  .trash-btn {
+    width: 40px;
+  }
+
+  .notice-date {
+    display: none;
+  }
 }
